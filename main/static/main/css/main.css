@@ -4,7 +4,7 @@ body{
 
 aside{
     float: left;
-    background: aquamarine;
+    background: #ab08a9;
     width: 30%;
     padding:2.5%;
     height: 100vh;
@@ -13,7 +13,28 @@ aside{
 }
 
 aside .logo{
+    color: aliceblue;
     font-size: 25px;
     margin-left: 5px;
     font-weight: bold;
+}
+
+aside ul{list-style: none}
+aside ul li{
+    color: aliceblue;
+    display: block;
+    margin-top: 20px;
+    transition: all .6s;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color: red;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+aside h3{
+    color: aliceblue;
+    margin-top: 20px;
+    margin-left: 5px;
 }
