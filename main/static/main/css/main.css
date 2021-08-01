@@ -1,0 +1,19 @@
+body{
+    background: darkmagenta;
+}
+
+aside{
+    float: left;
+    background: aquamarine;
+    width: 20%;
+    padding:2.5%;
+    height: 100vh;
+    color: black;
+    border-right: 5px solid blueviolet;
+}
+
+aside .logo{
+    font-size: 40px;
+    margin-left: 1px;
+    font-weight: bold;
+}
