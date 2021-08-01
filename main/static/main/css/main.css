@@ -5,7 +5,7 @@ body{
 aside{
     float: left;
     background: aquamarine;
-    width: 20%;
+    width: 30%;
     padding:2.5%;
     height: 100vh;
     color: black;
@@ -13,7 +13,7 @@ aside{
 }
 
 aside .logo{
-    font-size: 40px;
-    margin-left: 1px;
+    font-size: 25px;
+    margin-left: 5px;
     font-weight: bold;
 }
