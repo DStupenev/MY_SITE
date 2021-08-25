@@ -8,6 +8,7 @@ urlpatterns = [
     path('', include('main.urls')),
     path('news/', include('news.urls')),
     path('library/', include('library.urls')),
+    path('log_in/', include('log_in.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
