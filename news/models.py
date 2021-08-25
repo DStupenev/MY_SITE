@@ -14,5 +14,3 @@ class Comment(models.Model):
     article = models.ForeignKey(News, on_delete=models.CASCADE)
     author_name = models.CharField(max_length=50)
     comment_text = models.CharField(max_length=300)
-
-
