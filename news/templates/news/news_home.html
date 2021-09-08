@@ -6,9 +6,14 @@
 
 {% block difference_body %}
     <div class="features">
-    <h1>News.</h1>
-    <p>Lorem ipsum</p>
-    <button class="btn btn-warning">On the Main page.</button>
-    {{ news }}
+        <h1>{{ title }}</h1>
+        {% for item in news %}
+    <div>
+        <p>{{ item.title }} </p>
+        <p>{{ item.content }} </p>
+        <p>{{ item.create_at|date:"Y-m-d H:i:s" }} </p>
+    </div>
+    <hr>
+{% endfor %}
     </div>
 {% endblock %}
