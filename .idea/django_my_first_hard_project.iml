@@ -21,6 +21,7 @@
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="e50e7d9551" level="application" />
     <orderEntry type="library" name="all" level="application" />
+    <orderEntry type="library" name="@popperjs/core" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
