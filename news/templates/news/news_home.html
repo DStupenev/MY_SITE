@@ -5,39 +5,35 @@
 {% endblock %}
 
 {% block sidebar %}
-    <div class="col-md-4">
-        <ol class="list-group list-group-numbered">
-            {% for item in categories %}
-            <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action">{{ item.title }}</a>
-            {% endfor %}
-        </ol>
-    </div>
+    <ol class="list-group list-group-numbered">
+        {% for item in categories %}
+        <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action">{{ item.title }}</a>
+        {% endfor %}
+    </ol>
 {% endblock %}
 {% block content %}
-    <div class="col-md-8"></div>
-            {% for item in news %}
-            <div class="card mb-3">
-                <div class="card-header">
-                    Категория: <a href="{% url 'category' item.category.pk %}">{{ item.category }}</a>
-                </div>
-                <div class="card-body">
-                    <div class="media">
-                        {% if item.foto %}
-                            <img src="{{ item.photo.url }}" alt="" width="350" class="mr-3">
-                        {% else %}
-                            <img src=" https://picsum.photos/id/1060/350/300/?blur=2" alt="">
-                        {% endif %}
-                        <div class="media-body">
-                            <h5 class="card-title">{{ item.title }}</h5>
-                            <p class="card-text">{{ item.content }}</p>
-                            <a href="#" class="btn btn-primary">Read more...</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer text-muted">
-                      {{ item.create_at|date:"Y-m-d H:i:s" }}
+    {% for item in news %}
+    <div class="card mb-3">
+        <div class="card-header">
+            Категория: <a href="{% url 'category' item.category.pk %}">{{ item.category }}</a>
+        </div>
+        <div class="card-body">
+            <div class="media">
+                {% if item.foto %}
+                    <img src="{{ item.photo.url }}" alt="" width="350" class="mr-3">
+                {% else %}
+                    <img src=" https://picsum.photos/id/1060/350/300/?blur=2" alt="">
+                {% endif %}
+                <div class="media-body">
+                    <h5 class="card-title">{{ item.title }}</h5>
+                    <p class="card-text">{{ item.content }}</p>
+                    <a href="#" class="btn btn-primary">Read more...</a>
                 </div>
             </div>
-            {% endfor %}
+        </div>
+        <div class="card-footer text-muted">
+              {{ item.create_at|date:"Y-m-d H:i:s" }}
+        </div>
     </div>
+    {% endfor %}
 {% endblock %}
