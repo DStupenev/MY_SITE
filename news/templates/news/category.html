@@ -5,11 +5,7 @@
 {% endblock %}
 
 {% block sidebar %}
-    <ol class="list-group list-group-numbered">
-        {% for item in categories %}
-        <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action">{{ item.title }}</a>
-        {% endfor %}
-    </ol>
+    {% include 'inc/_sidebar.html' %}
 {% endblock %}
 {% block content %}
         {% for item in news %}
@@ -35,5 +31,5 @@
                   {{ item.create_at|date:"Y-m-d H:i:s" }}
             </div>
         {% endfor %}
-{% endblock %}
 </div>
+{% endblock %}
