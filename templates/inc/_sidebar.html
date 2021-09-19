@@ -1,9 +1,10 @@
 {% load news_tags %}
-<div>
-    {% get_categories as categories %}
-    <ol class="list-group list-group-numbered">
-        {% for item in categories %}
-        <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action">{{ item.title }}</a>
-        {% endfor %}
-    </ol>
+
+
+<div class="list-group">
+    {% get_list_categories as categories %}
+    {% for item in categories %}
+    <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action">{{ item.title }}</a>
+    {% endfor %}
 </div>
+
