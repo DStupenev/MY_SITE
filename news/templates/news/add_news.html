@@ -1,7 +1,7 @@
 {% extends 'news_base/base.html' %}
 
 {% block title %}
- {{ block.super }}:Добавить новость
+{{ block.super }}:Добавление новости
 {% endblock %}
 
 {% block sidebar %}
@@ -14,10 +14,8 @@
 
 <form action="{% url 'add_news' %}" method="post">
     {% csrf_token %}
-
     {{ form.as_p }}
-
-     <button type="submit" class="btn btn-primary btn-block">Добавить новость</button>
+    <button type="submit" class="btn btn-primary btn-block">Добавить новость</button>
 </form>
 
 {% endblock %}
