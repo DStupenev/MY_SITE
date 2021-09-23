@@ -126,10 +126,10 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 INTERNAL_IPS = ['127.0.0.1']
-EMAIL_HOST = 'smtp.ukr.net'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465 # 2525
-EMAIL_HOST_USER = '' # email user
-EMAIL_HOST_PASSWORD = '' # email password
+EMAIL_HOST_USER = 'ddimastupenev@gmail.com' # email user
+EMAIL_HOST_PASSWORD = 'Dhalow123@' # email password
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
