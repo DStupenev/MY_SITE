@@ -134,6 +134,11 @@ EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_JQUERY_URL = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+CKEDITOR_IMAGE_BACKEND = 'pillow'
+CKEDITOR_UPLOAD_SLUGIFY_FILENAME = False
+CKEDITOR_RESTRICT_BY_USER = True
+CKEDITOR_BROWSE_SHOW_DIRS = True
 
 CKEDITOR_CONFIGS = {
     'default': {

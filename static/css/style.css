@@ -1,3 +1,46 @@
 body{
-    background-color: #2bcde2;
+    background-color: #19a6b6;
 }
+
+navbar-brand {
+    background: #19a6b6;
+    color: black;
+    border-right: 5px solid #791111;
+}
+aside{
+    background: #19a6b6;
+    color: black;
+    border-right: 5px solid #791111;
+}
+
+
+aside ul{list-style: none}
+aside ul li{
+    color: aliceblue;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color: red;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+aside h3{
+    color: aliceblue;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+main .features{
+    float: left;
+    color: aliceblue;
+    margin-top: 100px;
+    text-align: center;
+    width: 70%;
+}
+
+main .features h1{front-size: 50px}
+main .features p{max-width: 750px; margin: 20px;}
