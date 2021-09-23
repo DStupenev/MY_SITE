@@ -1,46 +1,28 @@
-body{
+body {
     background-color: #19a6b6;
 }
 
-navbar-brand {
-    background: #19a6b6;
-    color: black;
-    border-right: 5px solid #791111;
+.btn-primary{
+background-color: #ff0000;
+color: white;
 }
-aside{
-    background: #19a6b6;
-    color: black;
-    border-right: 5px solid #791111;
-}
-
-
-aside ul{list-style: none}
-aside ul li{
-    color: aliceblue;
-    display: block;
-    margin-top: 20px;
-    transition: transform .6s;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:visited{
+background-color: #19a6b6;
+color: white;
 }
 
-aside ul li:hover, aside ul a:hover{
-    color: red;
+.navbar-brand, .navbar-expand-lg, .navbar-nav, .nav-link {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
     text-decoration: none;
-    transform: scale(1.05);
-}
+    white-space: nowrap;
+    color: #ffffff;
 
-aside h3{
-    color: aliceblue;
-    margin-top: 20px;
-    margin-left: 5px;
 }
-
-main .features{
-    float: left;
-    color: aliceblue;
-    margin-top: 100px;
-    text-align: center;
-    width: 70%;
+a {
+    color: #00000b;
 }
-
-main .features h1{front-size: 50px}
-main .features p{max-width: 750px; margin: 20px;}

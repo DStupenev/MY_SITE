@@ -28,7 +28,7 @@ aside ul li{
 }
 
 aside ul li:hover, aside ul a:hover{
-    color: red;
+    color: #ff0000;
     text-decoration: none;
     transform: scale(1.05);
 }

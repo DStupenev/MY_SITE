@@ -6,14 +6,15 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="{% url 'Home' %}">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Контакты</a></li>
-            {% if request.user.is_authenticated %}
-            <li class="nav-item"><a class="nav-link" href="{% url 'add_news' %}">Добавить новость</a></li>
-            {% endif %}
-        </ul>
-
+        <aside>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'Home' %}">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Контакты</a></li>
+                {% if request.user.is_authenticated %}
+                <li class="nav-item"><a class="nav-link" href="{% url 'add_news' %}">Добавить новость</a></li>
+                {% endif %}
+            </ul>
+        </aside>
         <span class="navbar-text">
             {% if request.user.is_authenticated %}
             Добро пожаловать, {{ user.username }} | <a href="{% url 'logout' %}">Выход</a>

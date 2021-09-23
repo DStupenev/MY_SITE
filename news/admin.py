@@ -13,6 +13,10 @@ class NewsAdminForm(forms.ModelForm):
         fields = '__all__'
 
 
+class NewsAddNews(forms.ModelForm):
+    content = forms.CharField(widget=CKEditorUploadingWidget())
+
+
 class NewsAdmin(admin.ModelAdmin):
     form = NewsAdminForm
     list_display = ('id', 'title', 'category', 'create_at', 'update_at', 'is_published')

@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
     'captcha',
     'news',
-]
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
